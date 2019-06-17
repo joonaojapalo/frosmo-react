@@ -15,9 +15,10 @@
   "keywords": [
     "frosmo"
   ],
-  "authors": [{
-    "name": "Joona Ojapalo",
-    "email": "joona.ojapalo@frosmo.com"
+  "authors": [
+    {
+      "name": "Joona Ojapalo",
+      "email": "joona.ojapalo@frosmo.com"
     },
     {
       "name": "Andrew Fatkulin",
@@ -40,7 +41,7 @@
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.4.2",
     "babel-jest": "^24.7.1",
-    "jest": "^24.7.1",
+    "jest": "^24.8.0",
     "object-assign": "^4.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
