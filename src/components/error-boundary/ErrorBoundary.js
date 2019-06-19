@@ -12,10 +12,12 @@ export default class ErrorBoundary extends Component {
     }
 
     componentDidCatch (error, info) {
-        logger.error({
-            error,
-            info,
-        });
+        if (typeof error === 'object') {
+            const { message, stack } = error;
+            if (message || stack) {
+                logger.error(message, stack);
+            }
+        }
 
         const { onError } = this.props;
 
