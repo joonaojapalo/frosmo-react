@@ -34,7 +34,7 @@ const ComponentA = props => <h1>I'm content A</h1>;
 const ComponentB = props => <h1>I'm content B</h1>;
 
 const FrosmoVariation = props =>
-    Number(props.frosmoMessage.revision) === Number(props.id)
+    Number(props.frosmoModificationContext.variation) === Number(props.id)
         ? React.createElement(props.component, props)
         : null;
 
